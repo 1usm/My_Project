@@ -16,6 +16,14 @@ froggy.ui.form.on('Library Manager', {
 		frm.set_df_property('lead', 'hidden', 1)
 		frm.set_df_property('supplier_name', 'hidden', 1)
 		frm.set_df_property('supplier_group', 'hidden', 1)
+
+		// frm.fields_dict['project'].get_query = function(doc, cdn, cdt) {
+        //     return {
+        //         filters: [
+        //             ['Project', 'status', '=', '1']
+        //         ]
+        //     };
+        // };
 	},
 
 	invoice_selection: function (frm) {
