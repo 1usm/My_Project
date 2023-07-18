@@ -26,6 +26,17 @@ froggy.ui.form.on('Library Manager', {
         // };
 	},
 
+	product: function(frm){
+		frm.set_query('product', function() {
+			return {
+				query: 'myapp.myapp.doctype.library_manager.library_manager.query_method',
+				filters: {
+					// naming_series: 'PT-SINV-2023-00002'
+				}
+			}
+		});
+	},
+
 	invoice_selection: function (frm) {
 
 		if (frm.doc.invoice_selection == "Sales Invoice") {
